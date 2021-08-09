@@ -36,8 +36,9 @@ public class Grid : MonoBehaviour
         {
             for (int x = 0; x <= xSize; x++, i++)
             {
-                Debug.Log(x+ y);
+                
                 vertices[i] = new Vector3(x, y, noiseMap[x,y]);
+                Debug.Log(vertices[i]);
             }
         }
         mesh.vertices = vertices;
